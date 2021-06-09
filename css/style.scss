@@ -1,0 +1,434 @@
+// 設定---------------------------------
+$main-color: #a98f02;
+$base-color: #f6f2e7;
+$border-color: #d4cfb8;
+$font-normal: 14px;
+$font-midle: 20px;
+$font-large: 36px;
+
+
+
+// 共通---------------------------------
+body{
+  -webkit-text-size-adjust: 100%;
+  }
+.page {
+  font-size: $font-normal;
+  a {
+    color: $main-color;
+    &:hover {
+      left: 0px;
+      top: 0px;
+      color: #e9c80e;
+    }
+  }
+  .fa-square-full {
+    font-size: 5px;
+    transform: rotate(45deg);
+    vertical-align: 1px;
+  }
+}
+  // ヘッダー---------------------------------
+  header {
+    .headtop {
+      background-color: $base-color;
+      .inline {
+        width: 960px;
+        height: 120px;
+        margin: 0 auto 0 auto;
+        position: relative;
+        h1 {
+          position: absolute;
+          left: 0;
+          bottom: 20px;
+        }
+        #share {
+          position: absolute;
+          top: 20px;
+          right: 0;
+        }
+        ul {
+          position: absolute;
+          right: 0;
+          bottom: 20px;
+          li {
+            float: left;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    p.top_img {
+      width: 960px;
+      margin: 0 auto 0 auto;
+    }
+    .headbottom {
+      background-color: #000;
+      overflow: hidden;
+      .inline {
+        width: 960px;
+        margin: 0 auto 0 auto;
+      }
+      ul {
+        li {
+          float: left;
+        }
+      }
+    }
+  }
+
+
+
+// メイン---------------------------------
+// トップページ
+.content {
+  clear: both;
+  background-color: $base-color;
+  background-image: url(../images/back_img.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 40px;
+  font-weight: bold;
+  padding-bottom: 80px;
+  .inline {
+    width: 960px;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    .main {
+      width: 600px;
+      float: left;
+      section {
+        margin-bottom: 60px;
+        opacity: 0;
+        &.on {
+          opacity: 1;
+        }
+        &:nth-child(3) {
+          margin-bottom: 23px;
+        }
+      }
+      h2 {
+        height: 50px;
+        background-color: #b9b498;
+        font-size: $font-midle;
+        line-height: 45px;
+        padding: 0 30px 0 30px;
+        color: #fff;
+        border: 4px solid $border-color;
+        font-weight: bold;
+      }
+      h2.kinkyu {
+        height: 80px;
+        line-height: 1.5;
+        padding-top: 10px;
+      }
+      p {
+        background-color: #fff;
+        padding: 10px 30px 40px 30px;
+        border: 4px solid $border-color;
+        border-top: none;
+        line-height: 2;
+        span {
+          line-height: 4;
+        }
+      }
+      .archive {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        text-align: center;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+
+// 学校案内
+#info, #from_principal, #exam_info, #materials {
+  section {
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    h1 {
+      font-size: $font-large;
+      margin: 2px 0 25px 0;
+      font-weight: bold;
+    }  
+    p {
+        padding-top: 30px;
+    }
+    p.enkaku {
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+
+
+//高校入試情報
+#exam_info {
+  .exam {
+    border: 4px solid $border-color;
+    border-top: none;
+    .hyou {
+      background-color: #fff;
+      table {
+        background-color: #fff;
+        border: 1px solid #999;
+        width: 538px;
+        margin: 0 30px 0 27px;
+        th {
+          background-color: #ccc;
+          text-align: center;
+          border: 1px solid #999;
+          height: 30px;
+          line-height: 30px;
+        }
+        td {
+          border: 1px solid #999;
+          height: 70px;
+          padding: 10px 0 0 10px;
+        }
+        .td1, .td2 {
+          width: 65px;
+        }
+      }
+    }
+    p {
+      border: none;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      &:last-child {
+        padding-bottom: 50px;
+      }
+    }  
+  }
+}
+
+//学校資料
+#materials {
+  .mokuji {
+    border-bottom: none;
+    line-height: 1;
+    padding-bottom: 25px;
+  }
+  .youran {
+    background-color: #fff;
+    padding: 0 30px 45px 75px;
+    border: 4px solid $border-color;
+    border-top: none;
+    line-height: 1.5;
+    h3 {
+      font-weight: bold;
+      text-indent: -3.5em;
+    }
+    ol {
+      li {
+        background-image: url(../images/dot.png);
+        background-repeat: repeat-x;
+        background-position: 1px center;
+        .title {
+          float: left;
+          background-color: #fff;
+        }
+        .page_num {
+          float: right;
+          padding-right: 130px;
+          background-color: #fff;
+        }
+        .bubunkoukai {
+          padding-right: 45px;
+        }
+        .bubunColor {
+          color: #666;
+        }
+      }
+    }
+    .linlnone {
+      border: none;
+      padding: 0;
+      text-indent: -35px;
+      color: #333;
+    }
+  }
+  .hyouka,  .syllabus {
+    background-color: #fff;
+    padding: 0 30px 50px 30px;
+    border: 4px solid $border-color;
+    border-top: none;
+    line-height: 1.5;
+    h3 {
+      font-weight: bold;
+      &:first-child {
+        padding-top: 25px;
+      }
+      span {
+        color: #666;
+      }
+    }
+    ul {
+      li {
+        list-style-type: none;
+        padding-left: 25px;
+      }
+    }
+  }
+  .syllabus {
+    padding-top: 25px;
+  }
+}
+
+
+
+// 学校長より
+#from_principal {
+  .main {
+    .sec {
+      border: 4px solid $border-color;
+      border-top: none;
+      p {
+        line-height: 1.5;
+        border: none;
+      }
+      p.principal_img {
+        background-color: #fff;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      p.komidashi {
+        text-align: center;
+        padding: 0 0 25px 0;
+        line-height: 1;
+      }
+      p.comment {
+        padding-top: 0;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+
+// アサイド
+// ---------------------------------
+aside {
+  width: 300px;
+  float: right;
+  .info {
+    margin-bottom: 30px;
+    border: 4px solid $border-color;
+
+    h2 {
+      height: 50px;
+      background-color: $main-color;
+      font-size: $font-midle;
+      font-weight: bold;
+      line-height: 50px;
+      padding: 0 30px 0 30px;
+      color: #fff;
+      border-bottom: 4px solid $border-color;
+    }
+    ul {
+      li {
+        background-color: #fff;
+        height: 50px;
+        line-height: 50px;
+        list-style-type: none;
+        background-image: url(../images/arrow.png);
+        background-repeat: no-repeat;
+        background-position: 30px center;
+        border-bottom: 1px solid $border-color;
+        a {
+          text-decoration: none;
+          color: #000;
+          display: block;
+          padding: 0 30px 0 50px;
+          &:hover {
+            font-size: 105%;
+          }
+        }
+        span {
+          color: #666;
+        }
+      }
+    }
+  }
+  .link {
+    li {
+      margin-bottom: 10px;
+      list-style-type: none;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:hover {
+        transform: scale(1.05);
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}
+
+
+
+// フッター
+// ---------------------------------
+footer {
+  clear: both;
+  width: 960px;
+  height: 140px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  color: #333;
+  i {
+    font-size: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 70px;
+    display: none;    
+  }  
+  .footerleft {
+    nav {
+      ul {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        li {
+          float: left;
+          border-left: 1px solid #999;
+          &:last-child {
+            border-right: 1px solid #999;
+          }
+          a {
+            padding: 0 5px;
+            color: #333;
+            text-decoration: none;
+            &:hover {
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+    p {
+      clear: both;
+      color: #999;
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+    }
+  }
+  div.add {
+    .add1 {
+      position: absolute;
+      top: 50px;
+      right: 0;
+    }
+    .add2 {
+      position: absolute;
+      bottom: 50px;
+      right: 0;
+    }
+  }
+}
